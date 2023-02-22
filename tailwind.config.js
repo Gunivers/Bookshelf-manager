@@ -13,6 +13,8 @@ module.exports = {
       'white': '#F5F5F5',
       'gray': {
         20: '#E0E3E7',
+        30: '#C6CDD6',
+        40: '#AAB1B9',
         90: '#26292E',
       },
       'black': '#181A1D',
@@ -22,7 +24,8 @@ module.exports = {
       none: 'none',
     },
     boxShadow: {
-      DEFAULT: '0px 3px 2px rgba(24, 26, 29, 0.2)'
+      DEFAULT: '0px 3px 2px rgba(24, 26, 29, 0.2)',
+      'inner': 'inset 0px -1px 3px rgba(24, 26, 29, 0.2)'
     },
     fontFamily: {
       sans: ['Inter', 'sans-serif'],

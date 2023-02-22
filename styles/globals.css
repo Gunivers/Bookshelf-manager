@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+hr {
+    @apply text-gray-30 my-4 border-[1.5px]
+}
