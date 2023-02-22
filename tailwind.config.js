@@ -6,58 +6,28 @@ module.exports = {
     './ui/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {
-      // https://vercel.com/design/color
-      colors: {
-        vercel: {
-          pink: '#FF0080',
-          blue: '#0070F3',
-          cyan: '#50E3C2',
-          orange: '#F5A623',
-          violet: '#7928CA',
-        },
+    colors: {
+      'primary': {
+        DEFAULT: '#3F97FF',
       },
-      keyframes: ({ theme }) => ({
-        rerender: {
-          '0%': {
-            'border-color': theme('colors.vercel.pink'),
-          },
-          '40%': {
-            'border-color': theme('colors.vercel.pink'),
-          },
-        },
-        highlight: {
-          '0%': {
-            background: theme('colors.vercel.pink'),
-            color: theme('colors.white'),
-          },
-          '40%': {
-            background: theme('colors.vercel.pink'),
-            color: theme('colors.white'),
-          },
-        },
-        shimmer: {
-          '100%': {
-            transform: 'translateX(100%)',
-          },
-        },
-        translateXReset: {
-          '100%': {
-            transform: 'translateX(0)',
-          },
-        },
-        fadeToTransparent: {
-          '0%': {
-            opacity: 1,
-          },
-          '40%': {
-            opacity: 1,
-          },
-          '100%': {
-            opacity: 0,
-          },
-        },
-      }),
+      'white': '#F5F5F5',
+      'gray': {
+        20: '#E0E3E7',
+        90: '#26292E',
+      },
+      'black': '#181A1D',
+    },
+    borderRadius: {
+      DEFAULT: '8px',
+      none: 'none',
+    },
+    boxShadow: {
+      DEFAULT: '0px 3px 2px rgba(24, 26, 29, 0.2)'
+    },
+    fontFamily: {
+      sans: ['Inter', 'sans-serif'],
+    },
+    extend: {
     },
   },
 };
