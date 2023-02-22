@@ -1,6 +1,6 @@
 import { Card } from "@/ui/Card";
 import Image from "next/image";
-import bookshelfThumbnailImg from '@/public/img/bookshelf-gunivers-thumbnail.png'
+import bookshelfThumbnailImg from '@/public/img/bookshelf-gunivers-thumbnail.jpg'
 
 export default function Page() {
   return (
