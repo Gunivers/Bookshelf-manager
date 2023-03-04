@@ -16,7 +16,7 @@ export default function Page() {
               <p className="text-2xl font-bold">Bookshelf World</p>
               <p>All the libraries and the systems contained in a Minecraft Map that show you plenty of possible things to do with Booshelf</p>
             </div>
-            <button className="w-max">
+            <button className="shrink-0 ml-2 shadow">
               <div className="flex items-center">
                 <div className="mr-2">
                   <svg className='w-8 h-8' aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +25,7 @@ export default function Page() {
                 </div>
                 <div className="grow text-left">
                   <p className="">Download</p>
-                  <p className="text-sm">demo world</p>
+                  <p className="text-xs">demo map</p>
                 </div>
               </div>
             </button>
