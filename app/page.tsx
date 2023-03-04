@@ -1,6 +1,7 @@
-import { Card } from "@/ui/Card";
+import { BookshelfDownloader } from '@/components/bookshelf/Downloader';
+import { Card } from '@/components/ui/Card';
+import bookshelfThumbnailImg from '@/public/img/bookshelf-gunivers-thumbnail.jpg';
 import Image from "next/image";
-import bookshelfThumbnailImg from '@/public/img/bookshelf-gunivers-thumbnail.jpg'
 
 export default function Page() {
   return (
@@ -15,14 +16,24 @@ export default function Page() {
               <p className="text-2xl font-bold">Bookshelf World</p>
               <p>All the libraries and the systems contained in a Minecraft Map that show you plenty of possible things to do with Booshelf</p>
             </div>
-              <div>
-                Download
+            <button className="w-max">
+              <div className="flex items-center">
+                <div className="mr-2">
+                  <svg className='w-8 h-8' aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </div>
+                <div className="grow text-left">
+                  <p className="">Download</p>
+                  <p className="text-sm">demo world</p>
+                </div>
               </div>
+            </button>
           </div>
         </div>
       </Card>
       <hr />
-
+      <BookshelfDownloader />
     </main>
   );
 }

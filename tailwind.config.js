@@ -3,7 +3,7 @@ module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx}',
     './page/**/*.{js,ts,jsx,tsx}',
-    './ui/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     colors: {
@@ -21,14 +21,15 @@ module.exports = {
     },
     borderRadius: {
       DEFAULT: '8px',
-      none: 'none',
+      'full': '50%',
+      none: '0',
     },
     boxShadow: {
       DEFAULT: '0px 3px 2px rgba(24, 26, 29, 0.2)',
       'inner': 'inset 0px -1px 3px rgba(24, 26, 29, 0.2)'
     },
     fontFamily: {
-      sans: ['Inter', 'sans-serif'],
+      sans: ['var(--font-inter)', 'sans-serif'],
     },
     extend: {
     },
