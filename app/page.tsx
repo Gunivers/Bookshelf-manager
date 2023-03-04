@@ -3,13 +3,17 @@ import { Card } from '@/components/ui/Card';
 import bookshelfThumbnailImg from '@/public/img/bookshelf-gunivers-thumbnail.jpg';
 import Image from "next/image";
 
+export const metadata = {
+  title: 'Bookshelf Manager',
+}
+
 export default function Page() {
   return (
-    <main>
+    <main className="max-h-max">
       <Card noPadding>
         <div className="grid grid-cols-4">
           <div className="col-span-1">
-            <Image src={bookshelfThumbnailImg} alt="Bookshelf thumbnail" width={248} height={124} className="w-full min-h-fit object-cover" />
+            <Image src={"/img/bookshelf-gunivers-thumbnail.jpg"} alt="Bookshelf thumbnail" width={248} height={124} className="w-full min-h-fit object-cover" />
           </div>
           <div className="col-span-3 flex flex-row items-center px-8 py-4">
             <div className="flex-grow">
